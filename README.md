@@ -1,4 +1,3 @@
-edu site
+Tyan Finder
 =====
-Site for schools, colleges and more.
-Written on Python + Flask + Wtforms
+Hikkimori tyan finder(only vk.com for this time)
