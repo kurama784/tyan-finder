@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+{% block title %}Hikki-Tyan Finder Alpha{% endblock %}
+{% block content %}
+
+<div class = "container">
+      <div class="page-header" id="banner">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1>Tyan Finder!</h1>
+            <p class="lead">найди свою ламповую няшу!</p>
+          </div>
+          <div class="col-lg-6" style="padding: 15px 15px 0 15px;">
+            <div class="well sponsor">
+          	<img src = "http://cs911.vk.me/u90870599/a_84f04bc7.jpg">
+                <h4 style="margin-bottom: 0.4em;">Дорогой анон!</h4>
+                <div class="clearfix">
+                  <p>Устал бесконечно просматривать анкет тысяч шлюх?.</p>
+                  <p>Мы это исправим!</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+</div>
+
+<p class = "equal">
+<div class = "container">
+
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Приступим к поиску?</legend>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="form-label" for="selectbasic">Страна</label>
+  <div class="forms">
+    <select id="selectbasic" name="selectbasic" class="form-control">
+      <option>Россия</option>
+      <option>Украина</option>
+      <option>Беларусь</option>
+      <option>Казахстан</option>
+    </select>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="form-label" for="city_input">Город</label>
+  <div class="forms">
+    <input id="city_input" name="city_input" placeholder="введите город" class="form-control" type="text">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="form-label" for="friends_check">Количество друзей</label>
+  <div class="forms">
+    <input id="friends_check" name="friends_check" placeholder="" class="form-control" type="text">
+    <p class="help-block">рекомендуется 100</p>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="form-label" for="interest">Интересы</label>
+  <div class="forms">                     
+    <textarea id="interest" name="interest" class ="form-control"></textarea>
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="form-group">
+  <label class="form-label" for="options">Опции</label>
+  <div class="forms">
+    <label class="checkbox" for="options-0">
+      <input name="options" id="options-0" value="Не учитывать количество друзей" type="checkbox" class ="form-control">
+      Не учитывать количество друзей
+    </label>
+    <label class="checkbox" for="options-1">
+      <input name="options" id="options-1" value="Не отсеивать паблики(НЕ РЕКОМЕНДУЕТСЯ)" type="checkbox" class ="form-control">
+      Не отсеивать паблики(НЕ РЕКОМЕНДУЕТСЯ)
+    </label>
+    <label class="checkbox" for="options-2">
+      <input name="options" id="options-2" value="Выводить " в="" активном="" поиске"(НЕ="" РЕКОМЕНДУЕТСЯ)"="" type="checkbox" class ="form-control">
+      Выводить "в активном поиске"(НЕ РЕКОМЕНДУЕТСЯ)
+    </label>
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="form-group">
+  <label class="form-label" for="photo_choose"></label>
+  <div class="forms">
+    <label class="radio inline" for="photo_choose-0">
+      <input name="photo_choose" id="photo_choose-0" value="С фото" checked="checked" type="radio" class ="form-control">
+      С фото
+    </label>
+    <label class="radio inline" for="photo_choose-1">
+      <input name="photo_choose" id="photo_choose-1" value="Без фото" type="radio" class ="form-control">
+      Без фото
+    </label>
+    <label class="radio inline" for="photo_choose-2">
+      <input name="photo_choose" id="photo_choose-2" value="Искать всех" type="radio" class ="form-control">
+      Искать всех
+    </label>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="form-label" for="submit"></label>
+  <div class="forms">
+    <button id="submit" name="submit" class="btn btn-success">Найти няшу!</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+{{ item }}
+
+</div>
+</p>
+{% endblock %}
